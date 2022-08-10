@@ -1,0 +1,262 @@
+/* <!--In the name of kindly generous ALLAH-->
+<!--Thanks ALLAH--> */
+
+
+body{
+    --bg:#202124;
+    --text:#bdc1c6;
+    color:var(--text);
+    background-color:var(--bg);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin:8px;
+    margin-bottom:0;
+    min-height:calc(100vh - 17px);
+}
+
+*{
+    font-family: Helvetica Neue,Noto Naskh Arabic UI,Arial,sans-serif;
+}
+
+header{
+    box-sizing:border-box;
+    width:100%;
+    padding:0px 10px;
+}
+
+header nav ul {
+    list-style:none;
+    padding:0;
+    display:flex;
+    flex-direction:row-reverse;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:0;
+
+}
+
+header nav ul li{
+    width:auto;
+    height:40px;
+    /* padding:10px 5px; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+header nav ul :is(.li-menu,.li-profile){
+    width:40px;
+}
+header nav ul .li-menu{
+    margin-left:-7px;
+    margin-right:4px;
+}
+header nav ul :is(.li-menu,.li-profile):hover{
+    background-color: rgba(232,234,237,.08);
+    border-radius:100px;
+
+}
+.item-content {
+    width:32px;
+    height:32px;
+    font-size:13px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#f7f7f7;
+    /* padding:2px; */
+}
+
+
+.profile{
+    border-radius:500px;
+    font-weight:bold;
+    background-color:#1b6619;
+    color:white;
+    font-size:1em;
+}
+
+.li-profile a:hover{
+    text-decoration: none;
+}
+
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.google-logo{
+    margin-bottom:10px;
+}
+
+
+.google-logo * {
+    margin:0px;
+}
+
+.form-search{
+    max-width:calc(100vw - 80px);
+    /* max-width:40vw; */
+    text-align: center;
+}
+
+.search-box{
+    position:relative;
+    width:582px;
+    box-sizing: border-box;
+    max-width:100%;
+    margin-bottom:8px;
+
+}
+
+.form-search :is(.img-focus,.img-keyboard,.img-mic){
+    position:absolute;
+    top:5px;
+
+}
+
+.form-search .img-focus{
+    top:28%;
+    right:2%;
+}
+.form-search .img-keyboard{
+    top:18%;
+    left:8%;
+}
+.form-search .img-mic{
+    top:18%;
+    left:3%;
+}
+
+.input-search {
+    color: #e8eaed;
+    overflow:hidden;
+    /* text-overflow:clip; */
+    box-sizing: border-box;
+    max-width:100%;
+    width:100%;
+    font-size: 16px;
+    /* font-weight:bold; */
+    background-color:transparent;
+    padding:12.5px 47px 12.5px 80px;
+    border-radius:100px;
+    border:none;
+    border: 1px solid #5f6368;
+    transition:padding 200ms ;
+    /* margin-left:-80px;
+    margin-right:-40px; */
+}
+
+.input-search:is(:hover,:focus){
+    background-color: #303134;
+    border-color: #303134;
+    box-shadow:0 0 5px #15151555;
+    outline:none;
+}
+
+.choose-one{
+    margin-top:18px;
+}
+
+.choose-one button{
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.google-lang{
+    font-size:13px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:10px;
+    height:28px;
+    margin-top:2px;
+}
+.google-lang *{
+    margin:0;
+}
+
+.google-lang a{
+    color: #8ab4f8;
+}
+
+footer{
+    background: #171717;
+    width:100vw;
+    box-sizing: border-box;
+    /* position:sticky;
+    bottom:0; */
+    font-size:14px;
+    justify-content: flex-end;
+    margin-top:auto;
+    margin-bottom:-8px;
+}
+
+.google-country{
+    padding: 15px 30px;
+    border-bottom: 1px solid #3c4043;
+    display:none;
+}
+
+.google-footer{
+    color: #9aa0a6;
+    padding: 0px 20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.google-footer p{
+    font-size:14px;
+    padding:15px;
+}
+.google-footer .section{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    flex-grow:1;
+}
+
+@media screen and (min-width: 1200px) {
+    .google-footer{
+        justify-content: space-between;
+    }
+    .google-footer .section{
+        flex-grow:0;
+    }
+}
+
+@media screen and (max-width:498px){
+    .google-logo img{
+        width:auto;
+        max-width:40vw;
+    }
+    
+    .form-search :is(.img-focus,.img-keyboard,.img-mic){
+        max-height:4vw;
+    }
+
+    .input-search {
+        max-height:8vw;
+    }
+}
+footer *{
+    margin:0;
+}
