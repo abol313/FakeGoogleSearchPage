@@ -127,7 +127,7 @@ a:hover{
 }
 .form-search .img-keyboard{
     top:18%;
-    left:8%;
+    left:9.5%;
 }
 .form-search .img-mic{
     top:18%;
@@ -179,6 +179,10 @@ a:hover{
     cursor: pointer;
     user-select: none;
 
+}
+
+.choose-one button:hover{
+    border: 1px solid #5f6368;
 }
 
 .google-lang{
